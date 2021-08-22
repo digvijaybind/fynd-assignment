@@ -1,0 +1,64 @@
+@import url('http://fonts.cdnfonts.com/css/segoe-ui-4?styles=18006,18005,18004,18003');
+
+* {
+    box-sizing: border-box;
+}
+.main_heading{
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    width: 90%;
+    margin: 1em auto;
+    font-family: 'Segoe UI', sans-serif;
+                                                                                    
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product{
+    flex: 0 0 100%;
+    margin-bottom: 1em;
+}
+
+.product-details h3{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    opacity: .95;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    margin-top: 37px;
+}
+.product-details span{
+    color: rgb(7, 101, 173);
+}
+.product-details span:hover{
+    border-bottom: 2px solid rgb(16, 111, 184) ;
+}
+
+.product img{
+    width:100%;
+    width: 100%;
+}
+
+.product img:hover{
+    opacity: 90%;
+}
+
+@media (min-width: 640px) {
+    .product {
+        flex-basis: 45%;
+    }
+}
+
+@media (min-width: 1080px) {
+    .product {
+        flex-basis: 24%;
+    } 
+}
